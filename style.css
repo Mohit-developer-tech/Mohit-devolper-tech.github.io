@@ -1,0 +1,136 @@
+/* Background video */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.8; /* Adjust opacity for better readability */
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+#header-content {
+    display: inline-block;
+    text-align: center;
+}
+
+#logo {
+    height: 100px; /* Adjusted for clarity */
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Footer styles with animation */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    animation: slideUp 2s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* General button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* General form input styling */
+input[type="date"], input[type="time"], select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ensuring sections are aligned and readable */
+main {
+    color: #333;
+    text-align: left;
+}
